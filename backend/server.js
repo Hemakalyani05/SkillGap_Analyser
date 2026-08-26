@@ -22,11 +22,7 @@ app.use('/api', limiter);
 
 // Middleware
 app.use(cors({
-  origin: [
-    'http://localhost:5173',
-    'http://localhost:3000',
-    'https://profound-creativity-production-743c.up.railway.app'
-  ],
+  origin: true,
   credentials: true
 }));
 app.use(express.json());
