@@ -5,7 +5,7 @@ export const AuthContext = createContext();
 
 // Axios instance
 const api = axios.create({
-  baseURL: `${import.meta.env.VITE_API_URL}/api`,
+  baseURL: 'https://skillgapanalyser-production-7bdb.up.railway.app/api',
 });
 
 // Set token to headers
