@@ -9,7 +9,7 @@ const rateLimit = require('express-rate-limit');
 connectDB();
 
 const app = express();
-
+app.set('trust proxy', 1);
 app.use(helmet());
 
 const limiter = rateLimit({
