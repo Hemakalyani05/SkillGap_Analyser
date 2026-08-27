@@ -24,10 +24,7 @@ const limiter = rateLimit({
 app.use('/api', limiter);
 
 // CORS
-app.use(cors({
-  origin: 'https://profound-creativity-production-743c.up.railway.app',
-  credentials: true
-}));
+
 
 // Handle preflight requests
 app.options(/.*/, cors({
