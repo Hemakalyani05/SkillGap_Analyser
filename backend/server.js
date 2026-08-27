@@ -30,11 +30,10 @@ app.use(cors({
 }));
 
 // Handle preflight requests
-app.options('*', cors({
+app.options(/.*/, cors({
   origin: 'https://profound-creativity-production-743c.up.railway.app',
   credentials: true
 }));
-
 // Parse JSON requests
 app.use(express.json());
 
